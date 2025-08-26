@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições de Pagamento</title>
+</head>
+<body>
+    <h1>Condições de Pagamento</h1>
+    <script>
+        const valor = Number(prompt("Digite o valor da compra R$: "));
+        const opcao = prompt("Forma de pagamento:\n1 - À vista (10% de desconto)\n2 - A prazo (3x sem juros)");
+
+        if (opcao == "1") {
+            const desconto = valor * 0.1;
+            const final = valor - desconto;
+            alert(`À vista com 10% de desconto.\nTotal: R$ ${final.toFixed(2)}`);
+        } else if (opcao == "2") {
+            const parcela = valor / 3;
+            alert(`A prazo em 3x sem juros.\nCada parcela: R$ ${parcela.toFixed(2)}`);
+        } else {
+            alert("Opção inválida!");
+        }
+    </script>
+</body>
+</html>

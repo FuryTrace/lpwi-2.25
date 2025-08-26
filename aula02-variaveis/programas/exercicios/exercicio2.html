@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta da Pizzaria</title>
+</head>
+<body>
+    <h1>Conta da Pizzaria</h1>
+    <script>
+        const valor = Number(prompt("Digite o valor total da conta R$: "));
+        const clientes = Number(prompt("Digite a quantidade de clientes: "));
+        const taxa = valor * 0.1;
+        const total = valor + taxa;
+        const porCliente = total / clientes;
+        alert(`Taxa de serviço: R$ ${taxa.toFixed(2)}\nValor total: R$ ${total.toFixed(2)}\nCada cliente paga: R$ ${porCliente.toFixed(2)}`);
+    </script>
+</body>
+</html>
